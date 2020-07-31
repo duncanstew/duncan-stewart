@@ -72,8 +72,16 @@ h3 {
     border-color: rgba(0,0,0,.125);
 }
 
+.container_left ul{
+    white-space: nowrap;
+}
+.container_left ul li{
+    display: inline-block;
+}
+
 .container_left ul li a {
     text-decoration: none;
+    overflow: hidden;
     font-size: 24px;
     color: #3a4145;
     font-family: 'Montserrat', sans-serif;
@@ -210,7 +218,6 @@ ul {
     border-width: thin;
 }
 
-
 .content {
     position: relative;
     display: inline-block;
@@ -314,6 +321,7 @@ ul {
     transition: 1s ease;
     
 }
+
 
 
 .footer {
@@ -568,6 +576,104 @@ Below is Books Page
     top: 0;
     object-fit: cover;
 }
+
+/*
+Projects page below this
+
+*/
+
+.projects {
+    border-color: rgba(0,0,0,.125);
+    background-color: #f5f8fa;
+    border-style: solid;
+    border-width: thin;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.projects-left {
+    height: 100%;
+    width: 400px;
+    font-size: 36px;
+    font-weight: 700;
+    opacity: .8;
+    font-family: open sans,'sans-serif';
+}
+
+.projects-right {
+    height: 100%;
+    width: 300px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: .8;
+    font-family: open sans,'sans-serif';
+}
+
+.projects-right ul {
+    display: inline-block;
+    padding: 2px;
+}
+
+.projects-right li {
+    list-style-type: circle;
+}
+.projects-content-box-container {
+    height: 550px;
+    max-width: 1400px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects-contents-box {
+    height: inherit;
+    width: 300px;
+}
+
+.projects-content-box-video {
+    height: 300px;
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects-content-box-title {
+    color: #3a4145;
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    width: inherit;
+    margin-top: 20px;
+}
+
+.projects-content-box-link a {
+    color: #0096cc;
+    text-decoration: none;
+}
+
+.projects-content-box-writing {
+    height: 100px;
+    width: inherit;
+    color: #3a4145;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+.projects-content-box-title h2{
+    color: #3a4145;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.projects-content-box-writing h2 {
+    font-family: open sans, 'sans-serif';
+}
+
+
+
 
 
 
