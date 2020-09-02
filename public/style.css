@@ -2444,6 +2444,12 @@ video {
   background-color: rgba(58, 65, 69, var(--bg-opacity));
 }
 
+.bg-custom-other-gray{
+  --bg-opacity: 1;
+  background-color: #AAAAAA;
+  background-color: rgba(170, 170, 170, var(--bg-opacity));
+}
+
 .hover\:bg-transparent:hover{
   background-color: transparent;
 }
@@ -3028,6 +3034,12 @@ video {
   background-color: rgba(58, 65, 69, var(--bg-opacity));
 }
 
+.hover\:bg-custom-other-gray:hover{
+  --bg-opacity: 1;
+  background-color: #AAAAAA;
+  background-color: rgba(170, 170, 170, var(--bg-opacity));
+}
+
 .focus\:bg-transparent:focus{
   background-color: transparent;
 }
@@ -3610,6 +3622,12 @@ video {
   --bg-opacity: 1;
   background-color: #3a4145;
   background-color: rgba(58, 65, 69, var(--bg-opacity));
+}
+
+.focus\:bg-custom-other-gray:focus{
+  --bg-opacity: 1;
+  background-color: #AAAAAA;
+  background-color: rgba(170, 170, 170, var(--bg-opacity));
 }
 
 .bg-opacity-0{
@@ -6234,6 +6252,22 @@ video {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-montserrat{
+  font-family: Montserrat;
+}
+
+.font-roboto{
+  font-family: Roboto;
+}
+
+.font-merriweather{
+  font-family: Merriweather;
+}
+
+.font-opensans{
+  font-family: Open+Sans;
+}
+
 .font-hairline{
   font-weight: 100;
 }
@@ -6484,6 +6518,10 @@ video {
 
 .text-2\.5xl{
   font-size: 1.7rem;
+}
+
+.text-4\.5xl{
+  font-size: 2.5rem;
 }
 
 .leading-3{
@@ -14414,6 +14452,12 @@ video {
   color: rgba(58, 65, 69, var(--text-opacity));
 }
 
+.text-custom-other-gray{
+  --text-opacity: 1;
+  color: #AAAAAA;
+  color: rgba(170, 170, 170, var(--text-opacity));
+}
+
 .hover\:text-transparent:hover{
   color: transparent;
 }
@@ -14998,6 +15042,12 @@ video {
   color: rgba(58, 65, 69, var(--text-opacity));
 }
 
+.hover\:text-custom-other-gray:hover{
+  --text-opacity: 1;
+  color: #AAAAAA;
+  color: rgba(170, 170, 170, var(--text-opacity));
+}
+
 .focus\:text-transparent:focus{
   color: transparent;
 }
@@ -15580,6 +15630,12 @@ video {
   --text-opacity: 1;
   color: #3a4145;
   color: rgba(58, 65, 69, var(--text-opacity));
+}
+
+.focus\:text-custom-other-gray:focus{
+  --text-opacity: 1;
+  color: #AAAAAA;
+  color: rgba(170, 170, 170, var(--text-opacity));
 }
 
 .text-opacity-0{
@@ -18632,6 +18688,34 @@ video {
   transition-property: transform;
 }
 
+.hover\:transition-none:hover{
+  transition-property: none;
+}
+
+.hover\:transition-all:hover{
+  transition-property: all;
+}
+
+.hover\:transition:hover{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+
+.hover\:transition-colors:hover{
+  transition-property: background-color, border-color, color, fill, stroke;
+}
+
+.hover\:transition-opacity:hover{
+  transition-property: opacity;
+}
+
+.hover\:transition-shadow:hover{
+  transition-property: box-shadow;
+}
+
+.hover\:transition-transform:hover{
+  transition-property: transform;
+}
+
 .ease-linear{
   transition-timing-function: linear;
 }
@@ -18841,6 +18925,16 @@ video {
   margin-left: 3rem;
 }
 
+.navbar-name-link {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 700;
+  --text-opacity: 1;
+  color: #3a4145;
+  color: rgba(58, 65, 69, var(--text-opacity));
+  text-transform: none;
+}
+
 .book-content {
   height: 22rem;
   width: 16rem;
@@ -18867,101 +18961,6 @@ video {
   font-weight: 300;
   height: 1.25rem;
   display: flex;
-}
-
-body {
-  font-weight: 700;
-  background: #ffffff;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-}
-
-.btn2 {
-  padding-top: 10px;
-}
-
-.btn3 {
-  padding-top: 10px;
-}
-
-.button {
-  position: relative;
-  outline: none;
-  background-color: #0096cc;
-  opacity: .5;
-  border-radius: 10px;
-  font-size: 28px;
-  color: #FFFFFF;
-  padding: 20px;
-  width: 150px;
-  height: 65px; /* Safari */
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.button:after {
-  content: "";
-  background: #f5f8fa;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px!important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s;
-  border-radius: 10px
-}
-
-.button:active:after {
-  padding: 0;
-  margin: 0;
-  transition: 0s;
-  opacity: 1;
-}
-
-h3 {
-  font-family: 'Merriweather', serif;
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-.container_left {
-  width: 20%;
-  border-width: thin;
-  border-color: rgba(0,0,0,.125);
-}
-
-.container_left ul{
-  white-space: nowrap;
-}
-
-.container_left ul li{
-  display: inline-block;
-}
-
-.container_left ul li a {
-  text-decoration: none;
-  overflow: hidden;
-  font-size: 24px;
-  color: #3a4145;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-
-header {
-  background: #ffffff;
-  padding-bottom: 20px;
-}
-
-header::after{
-  content: '';
-  display: table;
-  clear: both;
 }
 
 nav {
@@ -20865,6 +20864,12 @@ ul {
     background-color: rgba(58, 65, 69, var(--bg-opacity));
   }
 
+  .sm\:bg-custom-other-gray{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
+  }
+
   .sm\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -21449,6 +21454,12 @@ ul {
     background-color: rgba(58, 65, 69, var(--bg-opacity));
   }
 
+  .sm\:hover\:bg-custom-other-gray:hover{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
+  }
+
   .sm\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -22031,6 +22042,12 @@ ul {
     --bg-opacity: 1;
     background-color: #3a4145;
     background-color: rgba(58, 65, 69, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-custom-other-gray:focus{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
   }
 
   .sm\:bg-opacity-0{
@@ -24655,6 +24672,22 @@ ul {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-montserrat{
+    font-family: Montserrat;
+  }
+
+  .sm\:font-roboto{
+    font-family: Roboto;
+  }
+
+  .sm\:font-merriweather{
+    font-family: Merriweather;
+  }
+
+  .sm\:font-opensans{
+    font-family: Open+Sans;
+  }
+
   .sm\:font-hairline{
     font-weight: 100;
   }
@@ -24905,6 +24938,10 @@ ul {
 
   .sm\:text-2\.5xl{
     font-size: 1.7rem;
+  }
+
+  .sm\:text-4\.5xl{
+    font-size: 2.5rem;
   }
 
   .sm\:leading-3{
@@ -32835,6 +32872,12 @@ ul {
     color: rgba(58, 65, 69, var(--text-opacity));
   }
 
+  .sm\:text-custom-other-gray{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
+  }
+
   .sm\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -33419,6 +33462,12 @@ ul {
     color: rgba(58, 65, 69, var(--text-opacity));
   }
 
+  .sm\:hover\:text-custom-other-gray:hover{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
+  }
+
   .sm\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -34001,6 +34050,12 @@ ul {
     --text-opacity: 1;
     color: #3a4145;
     color: rgba(58, 65, 69, var(--text-opacity));
+  }
+
+  .sm\:focus\:text-custom-other-gray:focus{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
   }
 
   .sm\:text-opacity-0{
@@ -37053,6 +37108,34 @@ ul {
     transition-property: transform;
   }
 
+  .sm\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .sm\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .sm\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .sm\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .sm\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .sm\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .sm\:hover\:transition-transform:hover{
+    transition-property: transform;
+  }
+
   .sm\:ease-linear{
     transition-timing-function: linear;
   }
@@ -39012,6 +39095,12 @@ ul {
     background-color: rgba(58, 65, 69, var(--bg-opacity));
   }
 
+  .md\:bg-custom-other-gray{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
+  }
+
   .md\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -39596,6 +39685,12 @@ ul {
     background-color: rgba(58, 65, 69, var(--bg-opacity));
   }
 
+  .md\:hover\:bg-custom-other-gray:hover{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
+  }
+
   .md\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -40178,6 +40273,12 @@ ul {
     --bg-opacity: 1;
     background-color: #3a4145;
     background-color: rgba(58, 65, 69, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-custom-other-gray:focus{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
   }
 
   .md\:bg-opacity-0{
@@ -42802,6 +42903,22 @@ ul {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:font-montserrat{
+    font-family: Montserrat;
+  }
+
+  .md\:font-roboto{
+    font-family: Roboto;
+  }
+
+  .md\:font-merriweather{
+    font-family: Merriweather;
+  }
+
+  .md\:font-opensans{
+    font-family: Open+Sans;
+  }
+
   .md\:font-hairline{
     font-weight: 100;
   }
@@ -43052,6 +43169,10 @@ ul {
 
   .md\:text-2\.5xl{
     font-size: 1.7rem;
+  }
+
+  .md\:text-4\.5xl{
+    font-size: 2.5rem;
   }
 
   .md\:leading-3{
@@ -50982,6 +51103,12 @@ ul {
     color: rgba(58, 65, 69, var(--text-opacity));
   }
 
+  .md\:text-custom-other-gray{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
+  }
+
   .md\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -51566,6 +51693,12 @@ ul {
     color: rgba(58, 65, 69, var(--text-opacity));
   }
 
+  .md\:hover\:text-custom-other-gray:hover{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
+  }
+
   .md\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -52148,6 +52281,12 @@ ul {
     --text-opacity: 1;
     color: #3a4145;
     color: rgba(58, 65, 69, var(--text-opacity));
+  }
+
+  .md\:focus\:text-custom-other-gray:focus{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
   }
 
   .md\:text-opacity-0{
@@ -55200,6 +55339,34 @@ ul {
     transition-property: transform;
   }
 
+  .md\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .md\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .md\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .md\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .md\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .md\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .md\:hover\:transition-transform:hover{
+    transition-property: transform;
+  }
+
   .md\:ease-linear{
     transition-timing-function: linear;
   }
@@ -57159,6 +57326,12 @@ ul {
     background-color: rgba(58, 65, 69, var(--bg-opacity));
   }
 
+  .lg\:bg-custom-other-gray{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
+  }
+
   .lg\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -57743,6 +57916,12 @@ ul {
     background-color: rgba(58, 65, 69, var(--bg-opacity));
   }
 
+  .lg\:hover\:bg-custom-other-gray:hover{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
+  }
+
   .lg\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -58325,6 +58504,12 @@ ul {
     --bg-opacity: 1;
     background-color: #3a4145;
     background-color: rgba(58, 65, 69, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-custom-other-gray:focus{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
   }
 
   .lg\:bg-opacity-0{
@@ -60949,6 +61134,22 @@ ul {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-montserrat{
+    font-family: Montserrat;
+  }
+
+  .lg\:font-roboto{
+    font-family: Roboto;
+  }
+
+  .lg\:font-merriweather{
+    font-family: Merriweather;
+  }
+
+  .lg\:font-opensans{
+    font-family: Open+Sans;
+  }
+
   .lg\:font-hairline{
     font-weight: 100;
   }
@@ -61199,6 +61400,10 @@ ul {
 
   .lg\:text-2\.5xl{
     font-size: 1.7rem;
+  }
+
+  .lg\:text-4\.5xl{
+    font-size: 2.5rem;
   }
 
   .lg\:leading-3{
@@ -69129,6 +69334,12 @@ ul {
     color: rgba(58, 65, 69, var(--text-opacity));
   }
 
+  .lg\:text-custom-other-gray{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
+  }
+
   .lg\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -69713,6 +69924,12 @@ ul {
     color: rgba(58, 65, 69, var(--text-opacity));
   }
 
+  .lg\:hover\:text-custom-other-gray:hover{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
+  }
+
   .lg\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -70295,6 +70512,12 @@ ul {
     --text-opacity: 1;
     color: #3a4145;
     color: rgba(58, 65, 69, var(--text-opacity));
+  }
+
+  .lg\:focus\:text-custom-other-gray:focus{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
   }
 
   .lg\:text-opacity-0{
@@ -73347,6 +73570,34 @@ ul {
     transition-property: transform;
   }
 
+  .lg\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .lg\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .lg\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .lg\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .lg\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .lg\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .lg\:hover\:transition-transform:hover{
+    transition-property: transform;
+  }
+
   .lg\:ease-linear{
     transition-timing-function: linear;
   }
@@ -75306,6 +75557,12 @@ ul {
     background-color: rgba(58, 65, 69, var(--bg-opacity));
   }
 
+  .xl\:bg-custom-other-gray{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
+  }
+
   .xl\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -75890,6 +76147,12 @@ ul {
     background-color: rgba(58, 65, 69, var(--bg-opacity));
   }
 
+  .xl\:hover\:bg-custom-other-gray:hover{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
+  }
+
   .xl\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -76472,6 +76735,12 @@ ul {
     --bg-opacity: 1;
     background-color: #3a4145;
     background-color: rgba(58, 65, 69, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-custom-other-gray:focus{
+    --bg-opacity: 1;
+    background-color: #AAAAAA;
+    background-color: rgba(170, 170, 170, var(--bg-opacity));
   }
 
   .xl\:bg-opacity-0{
@@ -79096,6 +79365,22 @@ ul {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-montserrat{
+    font-family: Montserrat;
+  }
+
+  .xl\:font-roboto{
+    font-family: Roboto;
+  }
+
+  .xl\:font-merriweather{
+    font-family: Merriweather;
+  }
+
+  .xl\:font-opensans{
+    font-family: Open+Sans;
+  }
+
   .xl\:font-hairline{
     font-weight: 100;
   }
@@ -79346,6 +79631,10 @@ ul {
 
   .xl\:text-2\.5xl{
     font-size: 1.7rem;
+  }
+
+  .xl\:text-4\.5xl{
+    font-size: 2.5rem;
   }
 
   .xl\:leading-3{
@@ -87276,6 +87565,12 @@ ul {
     color: rgba(58, 65, 69, var(--text-opacity));
   }
 
+  .xl\:text-custom-other-gray{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
+  }
+
   .xl\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -87860,6 +88155,12 @@ ul {
     color: rgba(58, 65, 69, var(--text-opacity));
   }
 
+  .xl\:hover\:text-custom-other-gray:hover{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
+  }
+
   .xl\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -88442,6 +88743,12 @@ ul {
     --text-opacity: 1;
     color: #3a4145;
     color: rgba(58, 65, 69, var(--text-opacity));
+  }
+
+  .xl\:focus\:text-custom-other-gray:focus{
+    --text-opacity: 1;
+    color: #AAAAAA;
+    color: rgba(170, 170, 170, var(--text-opacity));
   }
 
   .xl\:text-opacity-0{
@@ -91491,6 +91798,34 @@ ul {
   }
 
   .xl\:transition-transform{
+    transition-property: transform;
+  }
+
+  .xl\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .xl\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .xl\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .xl\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .xl\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .xl\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .xl\:hover\:transition-transform:hover{
     transition-property: transform;
   }
 
