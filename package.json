@@ -1,0 +1,23 @@
+{
+  "name": "Website",
+  "version": "1.0.0",
+  "description": "https://duncanstew.github.io/duncan-stewart/index.html",
+  "main": "script.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duncanstew/duncan-stewart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duncanstew/duncan-stewart/issues"
+  },
+  "homepage": "https://github.com/duncanstew/duncan-stewart#readme",
+  "dependencies": {
+    "tailwindcss": "^1.6.2"
+  }
+}
