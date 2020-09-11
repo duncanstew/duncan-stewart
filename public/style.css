@@ -18963,6 +18963,14 @@ video {
   display: flex;
 }
 
+#name {
+  transition: none;
+  text-transform: uppercase;
+}
+
+#name:a:hover {
+}
+
 nav {
   float: right;
   padding-right: 100px;
@@ -19005,10 +19013,6 @@ nav a::before{
 
 nav a:hover::before{
   width:100%;
-}
-
-ul {
-  list-style: none;
 }
 
 @media (min-width: 640px){
@@ -91934,4 +91938,5 @@ ul {
             animation: bounce 1s infinite;
   }
 }
+
 

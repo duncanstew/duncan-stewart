@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .navbar {
     @apply flex flex-row h-15 justify-between ;
 }
@@ -29,6 +31,14 @@
     @apply mx-auto font-sans font-light h-5 flex;
 }
 
+#name {
+    transition: none;
+    text-transform: uppercase;
+}
+
+#name:a:hover {
+    
+}
 
 nav {
     float: right;
@@ -45,9 +55,7 @@ nav li{
     display: inline-block;
     margin-left: 70px;
     padding-top: 5px;
-    
-    position: relative;
-    
+    position: relative;  
 }
 
 nav a{
@@ -79,7 +87,4 @@ nav a:hover::before{
     width:100%;
 }
 
-ul {
-    list-style: none;
-}
 
