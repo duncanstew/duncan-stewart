@@ -16,7 +16,7 @@
 }
 
 .navbar-name-link {
-    @apply font-montserrat text-2xl font-bold text-custom-dark-gray normal-case;
+    @apply font-montserrat text-2xl font-bold text-custom-dark-gray normal-case my-auto;
 }
 
 .book-content {
@@ -30,61 +30,4 @@
 .book-description {
     @apply mx-auto font-sans font-light h-5 flex;
 }
-
-#name {
-    transition: none;
-    text-transform: uppercase;
-}
-
-#name:a:hover {
-    
-}
-
-nav {
-    float: right;
-    padding-right: 100px;
-}
-
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li{
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 5px;
-    position: relative;  
-}
-
-nav a{
-    color: dimgrey;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-nav a:hover{
-    color: #000;
-}
-
-nav a::before{
-    content: '';
-    display: block;
-    height: 5px;
-    
-    background-color: #444;
-    position: absolute;
-    
-    top: 0;
-    width: 0%;
-    
-    transition: all ease-in-out 200ms;
-}
-
-nav a:hover::before{
-    width:100%;
-}
-
 

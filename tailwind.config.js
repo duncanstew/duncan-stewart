@@ -2,6 +2,12 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+      },
       backgroundImage: theme => ({
         'twitter-colored': "url('../Resources/Images/twitter-colored.jpg')",
         'instagram-colored': "url('../Resources/Images/instagram-colored.jpg')",
