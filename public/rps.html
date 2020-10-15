@@ -7,35 +7,58 @@
 <meta charset="UTF-8">
 <script defer src="script.js"></script>
 </head>
+<style>
+    #menu-toggle:checked + #menu {
+        display: block;
+    }
+</style>
     
 <body>
     
 <header>
     <div class="flex flex-col h-screen bg-white">
-        <nav class="navbar">
-            <div class="navbar-name">
-                <a href="index.html" class="name text-2.5xl text-custom-dark-gray mt-2"> Duncan Stewart </a> 
+        <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+            <div class="flex-1 flex justify-between items-center">
+               <a href="index.html" class="text-2xl font-semibold"> Duncan Stewart </a> 
             </div>
-    
-            <div class="pt-3">
-                <ul>
-                    <li>
-                        <a href="books.html"> Books </a>
-                    </li>
-                    <li>
-                        <a href="projects.html"> Projects </a>
-                    </li>
-                    <li>
-                        <a href="rps.html"> R-P-S </a>
-                    </li>
-                    <li>
-                        <a href="resume.html"> Resume </a>
-                    </li>
-                </ul>
+
+               <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+                   <svg class="fill-current text-gray-700" width="20" height= "20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                   </svg>
+
+               </label>
+
+               <input type="checkbox" class="hidden" id="menu-toggle"/>
+
+               <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+                   <nav>
+                       <ul class="lg:flex items-center justify-between text-base lg:text-lg text-gray-700 pt-4 lg:pt-0 ">
+                           <li>
+                               <a href="books.html" class="lg:p-4 lg:py-3 py-1 px-0 block border-b-2 border-transparent hover:border-indigo-400">
+                                   Books
+                               </a>
+                           </li>
+   
+                           <li>
+                               <a href="projects.html" class="lg:p-4 lg:py-3 py-1 px-0 block border-b-2 border-transparent hover:border-indigo-400">
+                                   Projects
+                               </a>
+                           </li>
+   
+                           <li>
+                               <a href="resume.html" class="lg:p-4 lg:py-3 py-1 px-0 block border-b-2 border-transparent hover:border-indigo-400 mr-16">
+                                   Resume
+                               </a>
+                           </li>
+   
+                       </ul>
+                   </nav>
+               </div>
+
             </div>
-    
-    
-         </nav>
+
+       </header>
     </div>
     
     
