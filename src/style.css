@@ -6,7 +6,6 @@
 @tailwind utilities;
 
 
-
 .navbar {
     @apply flex flex-row h-15 justify-between ;
 }
